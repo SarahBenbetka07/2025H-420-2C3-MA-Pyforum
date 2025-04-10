@@ -1,8 +1,11 @@
 class Utilisateur():
 
-    def __init__(self, id, username):
+    def __init__(self, id, username, email, mot_de_passe):
         self.id = id
         self.username = username
+        self.email = email
+        self.mot_de_passe = mot_de_passe
+        self.forum_inscrit = []
     
     def __str__(self):
         return f"Utilisateur(id={self.id}, username='{self.username}')"
